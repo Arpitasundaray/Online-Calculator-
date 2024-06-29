@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculator</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <!-- Calculator Container -->
+    <div class="calculator card p-3">
+      <!-- Calculator Title -->
+      <h1 class="text-center mb-4">Online Calculator</h1>
+      <!-- Display Input Box -->
+      <input type="text" id="inputBox" class="form-control mb-3" placeholder="0" readonly />
+      <!-- Calculator Buttons -->
+      <!-- First Row of Buttons -->
+      <div class="row mb-2">
+        <button class="btn btn-danger col operator">AC</button>
+        <button class="btn btn-warning col operator">DEL</button>
+        <button class="btn btn-info col operator">%</button>
+        <button class="btn btn-info col operator">/</button>
+      </div>
+      <!-- Second Row of Buttons -->
+      <div class="row mb-2">
+        <button class="btn btn-secondary col">7</button>
+        <button class="btn btn-secondary col">8</button>
+        <button class="btn btn-secondary col">9</button>
+        <button class="btn btn-info col operator">*</button>
+      </div>
+      <!-- Third Row of Buttons -->
+      <div class="row mb-2">
+        <button class="btn btn-secondary col">4</button>
+        <button class="btn btn-secondary col">5</button>
+        <button class="btn btn-secondary col">6</button>
+        <button class="btn btn-info col operator">-</button>
+      </div>
+      <!-- Fourth Row of Buttons -->
+      <div class="row mb-2">
+        <button class="btn btn-secondary col">1</button>
+        <button class="btn btn-secondary col">2</button>
+        <button class="btn btn-secondary col">3</button>
+        <button class="btn btn-info col operator">+</button>
+      </div>
+      <!-- Fifth Row of Buttons -->
+      <div class="row mb-2">
+        <button class="btn btn-secondary col">00</button>
+        <button class="btn btn-secondary col">0</button>
+        <button class="btn btn-secondary col">.</button>
+        <button class="btn btn-success col equal">=</button>
+      </div>
+      <!-- Sixth Row of Buttons -->
+      <div class="row mb-2">
+        <button class="btn btn-primary col operator">^2</button>
+        <button class="btn btn-primary col operator">sqrt</button>
+        <button class="btn btn-primary col operator">^</button>
+        <button class="btn btn-primary col operator">(</button>
+        <button class="btn btn-primary col operator">)</button>
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="calculator.js"></script>
+</body>
+</html>
